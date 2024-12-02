@@ -7,6 +7,7 @@ import {
   UserButton
 } from '@clerk/nextjs'
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body>
-          
+          <Toaster />
           {children}
         </body>
       </html>

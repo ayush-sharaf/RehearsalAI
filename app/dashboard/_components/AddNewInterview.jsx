@@ -70,7 +70,7 @@ const AddNewInterview = () => {
         <h2 className='font-bold text-lg text-center'>+ Add New</h2>
       </div>
       <Dialog open={openDialog}>
-  <DialogTrigger>Open</DialogTrigger>
+  <DialogTrigger></DialogTrigger>
   <DialogContent className="max-w-2xl">
     <DialogHeader>
       <DialogTitle className="text-2xl">Tell us more about your job interviewing?</DialogTitle>
