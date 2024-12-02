@@ -30,20 +30,19 @@ function InterviewList() {
         <h2 className='font-medium text-xl'>Previous Mock Interview</h2>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-3'>
-            {interviewList?.length>0?interviewList.map((interview,index)=>(
+            {interviewList?.length>0 ? interviewList.map((interview, index) => (
                 <InterviewItemCard 
-                interview={interview}
-                key={index} />
-            ))
-            :
-            [1,2,3,4].map((item,index)=>(
-                <div className='h-[100px] w-full bg-gray-200 animate-pulse rounded-lg '>
+                    interview={interview}
+                    key={interview.id} // Using interview id as key (assuming id is unique)
+                />
+            )) : 
+            [1, 2, 3, 4].map((item, index) => (
+                <div className='h-[100px] w-full bg-gray-200 animate-pulse rounded-lg' key={`loading-${index}`}> {/* Unique key for loading state */}
                 </div>
-            ))
-        }
+            ))}
         </div>
     </div>
   )
 }
 
-export default InterviewList
+export default InterviewList;
