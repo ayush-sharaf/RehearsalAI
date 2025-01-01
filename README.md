@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# RehearsalAI
+
+RehearsalAI is a robust web application designed to simulate role-based conversations for practice and preparation. Built with Next.js, Clerk for authentication, GeminiAI for conversational AI, and NeonDB with Drizzle ORM for data management, RehearsalAI is designed for flexibility and scalability.
+
+## Live Demo
+
+Try RehearsalAI here: [https://rehearsal-ai.vercel.app/](https://rehearsal-ai.vercel.app/)
+
+---
+
+## Features
+
+- **Role-Based Dialogue**: Simulate conversations with two distinct roles.
+- **Dynamic AI Integration**: Powered by GeminiAI for advanced conversational capabilities.
+- **Authentication**: Clerk ensures secure and seamless user authentication.
+- **Database Management**: NeonDB with Drizzle ORM enables efficient, scalable, and flexible data handling.
+- **Environment Customization**: Configure conversation inputs, arguments, and outcomes to tailor practice sessions.
+
+---
+
+## Technologies Used
+
+- **Next.js**: Server-rendered React framework for building applications.
+- **React**: Component-based JavaScript library for UI development.
+- **Tailwind CSS**: Utility-first CSS framework for rapid design and styling.
+- **Clerk**: Simplified and secure user authentication solution.
+- **GeminiAI**: AI for generating and managing conversation flows.
+- **NeonDB + Drizzle ORM**: Scalable database with ORM for clean, efficient queries.
+
+---
+
+## Environment Variables
+
+The following environment variables are required for this application. Ensure these values are set in a `.env.local` file:
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=your_clerk_sign_in_url
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=your_clerk_sign_up_url
+NEXT_PUBLIC_DATABASE_URL=your_database_url
+NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
+NEXT_PUBLIC_INFORMATION=custom_information_variable
+NEXT_PUBLIC_QUESTION_NOTE=custom_question_note
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (version 14 or higher)
+- npm or yarn
+- Clerk account for authentication setup
+- NeonDB for database services
+- GeminiAI API key
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. **Clone the Repository**:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/ayush-sharaf/RehearsalAI.git
+   cd RehearsalAI
+   ```
 
-## Learn More
+2. **Install Dependencies**:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Set Up Environment Variables**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   Add your environment variable values in a `.env.local` file in the root directory.
 
-## Deploy on Vercel
+4. **Run the Development Server**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   Open [http://localhost:3000](http://localhost:3000) to view the app locally.
+
+---
+
+## Deployment
+
+This application is deployed using Vercel.
+
+1. **Fork the Repository**:
+   Create a fork of the repository on GitHub.
+2. **Connect to Vercel**:
+   Link the repository to your Vercel account.
+3. **Configure Environment Variables**:
+   Add the required variables in the Vercel dashboard.
+4. **Deploy**:
+   Trigger a deployment from the Vercel dashboard or GitHub.
+
+---
+
+## Contributing
+
+Contributions to RehearsalAI are welcome! Please follow these steps:
+
+1. Fork the project.
+2. Create a feature branch: `git checkout -b feature-name`.
+3. Make your changes and commit: `git commit -m 'Add feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Submit a pull request for review.
+
+---
+
+
+## Acknowledgements
+
+- OpenAI and GeminiAI for conversational APIs.
+- Clerk for authentication services.
+- NeonDB and Drizzle ORM for database solutions.
+- Vercel for deployment and hosting.
