@@ -50,7 +50,7 @@ NEXT_PUBLIC_QUESTION_NOTE=custom_question_note
 
 ### Prerequisites
 
-- Node.js (version 14 or higher)
+- Node.js 18.18 or later
 - npm or yarn
 - Clerk account for authentication setup
 - NeonDB for database services
